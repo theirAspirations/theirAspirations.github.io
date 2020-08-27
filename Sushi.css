@@ -12,7 +12,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-	opacity: 0.8;
+opacity: 0.8;
 	
 }
  
@@ -22,8 +22,7 @@ html {
 	width: 100%;
 	background-size: cover;
 	padding-left: 0px;
-	background-color: black;
-}
+ }
 
 #section2 {
 	position: relative;
@@ -31,8 +30,7 @@ html {
 	width: 100%;
 	background-size: cover;
 	padding-left: 0px;
-	background-image: url(images/Sushi.jpg");
-	background-blend-mode:color-dodge;
+ 	background-blend-mode:color-dodge;
 	background-color:rgba(0, 0, 0, 0.5);
 	margin:auto;
  
@@ -81,6 +79,11 @@ body{
 	color: white;
 	height: 100px;	
 	animation: historyAnimation 6s linear; 
+
+}
+
+iframe{
+	  pointer-events: none;
 
 }
 
