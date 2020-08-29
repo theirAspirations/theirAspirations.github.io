@@ -6,9 +6,29 @@
 	
 <body>
 
+<div class="scroll_indicator">
+	
+	<a href="#section3">
+		<img alt="" src="images/chef.png" width="45px" height="45px" style="position: absolute; right: 10%">
+	</a>
+
+	<a href="#section2">
+		<img alt="" src="images/sushi_icon.png" width="45px" height="45px" style="position: absolute; right: 50%">
+	</a>
+		
+	<a href="#section1"> 
+		<img alt="" src="images/book.png" width="45px" height="45px" style="position: relative; left: 10%">
+	</a>
+
+   <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+	
 <div id="section1">
 	
-	<div style="position: fixed; z-index: -99; width: 100%; height: 100%; top: 0; left: 0;  ">
+	<div style="position: fixed; z-index: -99; width: 100%; height: 100%; top: 0; left: 0;  -ms-transform: scale(1.3,1.2);
+      -webkit-transform: scale(1.3,1.2);  ">
   	<iframe frameborder="0" importance="high" width="100%" height="100%" src="https://www.youtube.com/embed/Br3O4knN7zU?autoplay=1
 	&controls=0
 	&mute=1
@@ -18,6 +38,8 @@
 	&playlist=ALO78yVz1EE" allow=" autoplay; fullscreen;"  ></iframe>
 	 
 	</div>
+	<div class="heading">
+ 	</div>
   	<div class="heading">
 		<h2>The History of Sushi</h2>
 	</div>
@@ -55,17 +77,13 @@
 </div>
 	
 	 
-<div style="vertical-align:middle;position: absolute; bottom: 0; left:48%">
-	<a href="#section2">
-			<img alt="" src="images/arrow.png" width="100px" height="50px">
-	</a>
-</div>	
+ 
   
    
 </div>
 
 <div id="section2">
-	
+ 
 	
 <ul class="cb-slideshow">
 	<li>
@@ -114,11 +132,7 @@
 	
 
  
-<div style="vertical-align:middle;position: absolute; bottom: 0; left:48%">
-	<a href="#section3">
-			<img alt="" src="images/arrow.png" width="100px" height="50px">
-	</a>
-</div>
+ 
 	
 		
 </div>
@@ -179,7 +193,7 @@
 	 </div>
 
 
-	<div style="vertical-align:middle;position: absolute; bottom: 0; left:48%; font-family: Lucida Grande; font-size: 20px; color: white;">
+	<div style=" position: absolute; bottom: 0; width: 50%; left:25%;  font-family: Lucida Grande; font-size: 20px; color: white; text-align: center">
 		<a href="#section1">
 		 <p>Back to top</p>
 		</a>
@@ -241,6 +255,18 @@ function showSlides_text(n) {
   
   slides_text[slideIndex_text-1].style.display = "block";  
  }
+	
+window.onscroll = function() {
+	scroll_indicator()
+}
+
+function scroll_indicator() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+	
 </script>
  
 </body>
