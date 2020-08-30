@@ -5,16 +5,7 @@ html {
 	
 }
  
-#vid {
-  object-fit:fill;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.8;
-	
-}
+ 
 
 .scroll_indicator {
   position: fixed;
