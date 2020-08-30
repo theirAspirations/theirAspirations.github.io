@@ -142,20 +142,18 @@ iframe{
 
  
 
-.next_selection img{
-	position: absolute;
-    left: 0;
-    bottom: 0;
-}
+ 
 
 p{
 font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 
 }
 .slideshow-container {
-  max-width: 700px;
-  position: relative;
+  width: 50%;
+  position: absolute;
+	left:25%;
   margin: auto;
+	border-radius: 25px;
 }
 
 .slideshow-container_text {
@@ -167,24 +165,38 @@ font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans
   
  }
 
+.darken:before {
+    position: fixed;
+	z-index: -1;
+	height: 100%;
+    right: 0;
+    left: 0;
+    content: '';
+	   background-color: rgba(0,0,0,0.5);
+}
+
 .mySlides_text {
   display: none;
   padding: 80px;
   text-align: center;
 }
 
+.mySlides {display: none}
+
+
  .text {
   color: #f2f2f2;
   font-size: 25px;
-  padding: 8px 12px;
   position: relative;
+margin: 20px;
+	 left: 0;
   bottom: 8px;
   width: 100%;
   text-align: center;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 
 }
-
+ 
  .numbertext {
   color: #f2f2f2;
   font-size: 12px;
